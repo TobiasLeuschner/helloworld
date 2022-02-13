@@ -1,13 +1,23 @@
 <template>
   <div id="app">
-  Hello world
-  </div> 
+  Hallo {{fullName}} ich bin {{ new Date().getFullYear() - byear}} Jahre alt
+  </div>
 </template>
 
 <script>
 
 export default {
-  name: 'App'
+  name: 'App',
+  data: () =>({
+    lastname: 'Schüppi',
+    vorname: 'David',
+    byear: 1996
+  }),
+  computed: {
+    fullName(){
+      return this.vorname + " " + this.lastname;
+    }
+  }
 }
 </script>
 
