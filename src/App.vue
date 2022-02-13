@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-  Hallo {{fullName}} ich bin {{ new Date().getFullYear() - byear}} Jahre alt
+  Hallo {{fullName}} ich bin {{ new Date().getFullYear() - byear}} Jahre alt und komme aus meiner Mama
   </div>
 </template>
 
